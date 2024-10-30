@@ -1,4 +1,3 @@
-
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:doctor_module/consts/app_colors.dart';
 import 'package:doctor_module/consts/app_fonts.dart';
@@ -220,6 +219,7 @@ class MyTextField extends StatefulWidget {
     this.labelColor,
     this.labelWeight,
     this.validator,
+    this.inputtextColor,
     this.useCountryCodePicker = false,
     this.useOutlinedBorder =
         false, // true for outlined border, false for underline
@@ -245,6 +245,7 @@ class MyTextField extends StatefulWidget {
       hintColor,
       bordercolor,
       fhintColor,
+      inputtextColor,
       labelColor;
   FontWeight? labelWeight;
   TextInputType? keyboardType;
@@ -306,7 +307,7 @@ class _MyTextFieldState extends State<MyTextField> {
                 style: TextStyle(
                   fontFamily: AppFonts.manrope,
                   fontSize: 15,
-                  color: kgrey1,
+                  color: widget.inputtextColor ?? kwhite,
                   fontWeight: FontWeight.w500,
                 ),
                 validator: widget.validator,

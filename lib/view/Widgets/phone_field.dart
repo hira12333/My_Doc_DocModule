@@ -2,7 +2,7 @@
 import 'package:country_picker/country_picker.dart';
 import 'package:doctor_module/consts/app_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 
 import '../../consts/app_colors.dart';
 import 'my_text.dart';

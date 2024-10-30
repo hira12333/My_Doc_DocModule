@@ -6,6 +6,7 @@ import 'package:doctor_module/view/Widgets/my_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bounce/flutter_bounce.dart';
 
+// ignore: must_be_immutable
 class MyButton extends StatelessWidget {
   MyButton(
       {this.onTap,
